@@ -1,3 +1,9 @@
+body {
+  font-family: "Slabo 27px", serif;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 nav {
   background-color: rgb(12, 12, 12);
   display: flex;
@@ -5,15 +11,25 @@ nav {
   align-items: center;
 }
 
-.logo {
+.contenedor-logo {
   height: 50px;
   width: 50px;
   margin-left: 40px;
 }
 
-.hamburguesa {
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.contenedor-hamburguesa {
   height: 40px;
   width: 40px;
+}
+
+.hamburguesa {
+  width: 100%;
+  height: auto;
   display: none;
 }
 
@@ -34,4 +50,178 @@ li {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.que-somos-cont {
+  background-color: gainsboro;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flechas-div {
+  height: 75px;
+  width: 100px;
+}
+
+.flechas {
+  height: auto;
+  width: 100%;
+}
+
+.que-somos {
+  width: 800px;
+
+  padding-left: 20px;
+}
+
+h1 {
+  color: orangered;
+  font-size: 30px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.link-git {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.linkedin-div {
+  width: 50px;
+  height: 50px;
+}
+
+.linkedin {
+  height: auto;
+  width: 100%;
+}
+
+.git-hub-div {
+  width: 45px;
+  height: 45px;
+}
+
+.github {
+  height: auto;
+  width: 100%;
+}
+
+.florencia-mobile {
+  display: none;
+}
+
+.desarroladora-mobile {
+  display: none;
+}
+
+.foto1 {
+  width: 120px;
+  height: 120px;
+}
+
+#foto1 {
+  width: 100%;
+  height: auto;
+}
+
+.piba1 {
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flo-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.natalia-mobile {
+  display: none;
+}
+
+.desarroladora2-mobile {
+  display: none;
+}
+
+.foto2 {
+  width: 120px;
+  height: 120px;
+}
+
+#foto2 {
+  width: 100%;
+  height: auto;
+}
+
+.piba2 {
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nat-des2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mariela-mobile {
+  display: none;
+}
+
+.desarroladora3-mobile {
+  display: none;
+}
+
+.foto3 {
+  width: 120px;
+  height: 120px;
+}
+
+#foto3 {
+  width: 100%;
+  height: auto;
+}
+
+.piba3 {
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mar-des3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pibas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+
+.titulos {
+  text-align: center;
+  color: orangered;
+}
+
+.cargo {
+  text-align: center;
+  color: orangered;
 }
