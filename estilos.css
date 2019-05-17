@@ -44,12 +44,21 @@ li {
   flex-direction: row;
   margin: 10px;
 }
-
-.imagen {
+div.padre {
   display: flex;
   justify-content: center;
+
   margin-top: 40px;
   margin-bottom: 40px;
+}
+div.imagen {
+  width: 800px;
+  height: 300px;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
 }
 
 .que-somos-cont {
@@ -224,4 +233,159 @@ p {
 .cargo {
   text-align: center;
   color: orangered;
+}
+
+.contenedor-foot {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 10px;
+}
+
+.correo {
+  color: orangered;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+
+.face-tw-ing {
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+}
+
+.sobre {
+  height: 30px;
+  width: 30px;
+}
+
+.img-sobre {
+  height: auto;
+  width: 100%;
+}
+
+.face {
+  height: 30px;
+  width: 30px;
+}
+
+.img-face {
+  height: auto;
+  width: 100%;
+}
+
+.ing {
+  height: 30px;
+  width: 30px;
+}
+
+.img-ing {
+  height: auto;
+  width: 100%;
+}
+
+.tw {
+  height: 30px;
+  width: 30px;
+}
+
+.img-tw {
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .hamburguesa {
+    display: block;
+    margin-left: 130px;
+  }
+
+  div.imagen {
+    height: 199px;
+  }
+
+  div.padre {
+    margin-bottom: 0;
+  }
+
+  .flechas-div {
+    display: none;
+  }
+
+  .que-somos {
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+
+  .link-git {
+    display: none;
+  }
+
+  .pibas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+  }
+
+  .titulos {
+    display: none;
+  }
+
+  .cargo {
+    display: none;
+  }
+
+  .piba1,
+  .piba2,
+  .piba3 {
+    width: 120px;
+  }
+
+  .florencia-mobile,
+  .desarroladora-mobile,
+  .natalia-mobile,
+  .desarroladora2-mobile,
+  .mariela-mobile,
+  .desarroladora3-mobile {
+    display: block;
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .florencia-mobile,
+  .natalia-mobile,
+  .mariela-mobile {
+    margin-bottom: -50px;
+    z-index: 2;
+  }
+
+  .desarroladora-mobile,
+  .desarroladora2-mobile,
+  .desarroladora3-mobile {
+    margin-top: -50px;
+    z-index: 2;
+  }
+
+  .contenedor-foot {
+    display: flex;
+    flex-direction: column;
+  }
 }
