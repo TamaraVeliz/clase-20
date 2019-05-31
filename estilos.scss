@@ -1,284 +1,351 @@
+@mixin imagenes {
+  width: 100%;
+  height: auto;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin none {
+  display: none;
+}
+
 body {
   font-family: "Slabo 27px", serif;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 nav {
   background-color: #0c0c0c;
-  display: flex;
+  @include flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
 .contenedor-logo {
   height: 50px;
   width: 50px;
-  margin-left: 40px; }
+  margin-left: 40px;
+}
 
 .logo {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .contenedor-hamburguesa {
   height: 40px;
-  width: 40px; }
+  width: 40px;
+}
 
 .hamburguesa {
-  width: 100%;
-  height: auto;
-  display: none; }
+  @include imagenes;
+  @include none;
+}
 
 .open {
   color: tomato;
-  display: flex;
-  margin-right: 40px; }
+  @include flex;
+  margin-right: 40px;
+}
 
 li {
   list-style: none;
   flex-direction: row;
-  margin: 10px; }
+  margin: 10px;
+}
 
 div.padre {
-  display: flex;
+  @include flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
 div.imagen {
   width: 800px;
-  height: 300px; }
+  height: 300px;
+}
 
 .banner {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .que-somos-cont {
   background-color: gainsboro;
   height: 150px;
-  display: flex;
+  @include flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+}
 
 .flechas-div {
   height: 75px;
-  width: 100px; }
+  width: 100px;
+}
 
 .flechas {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .que-somos {
   width: 800px;
-  padding-left: 20px; }
+  padding-left: 20px;
+}
 
 h1 {
   color: orangered;
   font-size: 30px;
-  margin: 0; }
+  margin: 0;
+}
 
 p {
-  margin: 0; }
+  margin: 0;
+}
 
 .link-git {
   width: 120px;
   height: 50px;
-  display: flex;
+  @include flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .linkedin-div {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+}
 
 .linkedin {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .git-hub-div {
   width: 45px;
-  height: 45px; }
+  height: 45px;
+}
 
 .github {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .florencia-mobile {
-  display: none; }
+  @include none;
+}
 
 .desarroladora-mobile {
-  display: none; }
+  @include none;
+}
 
 .foto1 {
   width: 120px;
-  height: 120px; }
+  height: 120px;
+}
 
 #foto1 {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .piba1 {
-  display: flex;
+  @include flex;
   width: 250px;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .flo-des {
-  display: flex;
+  @include flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .natalia-mobile {
-  display: none; }
+  @include none;
+}
 
 .desarroladora2-mobile {
-  display: none; }
+  @include none;
+}
 
 .foto2 {
   width: 120px;
-  height: 120px; }
+  height: 120px;
+}
 
 #foto2 {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .piba2 {
-  display: flex;
+  @include flex;
   width: 250px;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .nat-des2 {
-  display: flex;
+  @include flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .mariela-mobile {
-  display: none; }
+  @include none;
+}
 
 .desarroladora3-mobile {
-  display: none; }
+  @include none;
+}
 
 .foto3 {
   width: 120px;
-  height: 120px; }
+  height: 120px;
+}
 
 #foto3 {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .piba3 {
-  display: flex;
+  @include flex;
   width: 250px;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .mar-des3 {
-  display: flex;
+  @include flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .pibas {
-  display: flex;
+  @include flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 200px; }
+  height: 200px;
+}
 
 .titulos {
   text-align: center;
-  color: orangered; }
+  color: orangered;
+}
 
 .cargo {
   text-align: center;
-  color: orangered; }
+  color: orangered;
+}
 
 .contenedor-foot {
   background-color: black;
-  display: flex;
+  @include flex;
   justify-content: space-between;
   height: 80px;
   align-items: center;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .correo {
-  color: orangered; }
+  color: orangered;
+}
 
 .contacto {
-  display: flex;
+  @include flex;
   justify-content: space-between;
   align-items: center;
-  width: 180px; }
+  width: 180px;
+}
 
 .face-tw-ing {
-  display: flex;
+  @include flex;
   justify-content: space-around;
-  width: 120px; }
+  width: 120px;
+}
 
 .sobre {
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
 .img-sobre {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .face {
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
 .img-face {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .ing {
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
 .img-ing {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 .tw {
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
 .img-tw {
-  width: 100%;
-  height: auto; }
+  @include imagenes;
+}
 
 @media (max-width: 600px) {
   nav {
     justify-content: space-between;
-    height: 70px; }
+    height: 70px;
+  }
   .open {
-    display: none; }
+    @include none;
+  }
   .hamburguesa {
     display: block;
-    margin-left: 130px; }
+    margin-left: 130px;
+  }
   div.imagen {
-    height: 199px; }
+    height: 199px;
+  }
   div.padre {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+  }
   .flechas-div {
-    display: none; }
+    @include none;
+  }
   .que-somos {
     margin-left: 10px;
-    margin-right: 25px; }
+    margin-right: 25px;
+  }
   .link-git {
-    display: none; }
+    @include none;
+  }
   .pibas {
-    display: flex;
+    @include flex;
     flex-direction: column;
     align-items: center;
-    height: 600px; }
+    height: 600px;
+  }
   .titulos {
-    display: none; }
+    @include none;
+  }
   .cargo {
-    display: none; }
+    @include none;
+  }
   .piba1,
   .piba2,
   .piba3 {
-    width: 120px; }
+    width: 120px;
+  }
   .florencia-mobile,
   .desarroladora-mobile,
   .natalia-mobile,
@@ -288,17 +355,22 @@ p {
     display: block;
     background-color: gainsboro;
     padding: 5px;
-    border-radius: 5px; }
+    border-radius: 5px;
+  }
   .florencia-mobile,
   .natalia-mobile,
   .mariela-mobile {
     margin-bottom: -50px;
-    z-index: 2; }
+    z-index: 2;
+  }
   .desarroladora-mobile,
   .desarroladora2-mobile,
   .desarroladora3-mobile {
     margin-top: -50px;
-    z-index: 2; }
+    z-index: 2;
+  }
   .contenedor-foot {
-    display: flex;
-    flex-direction: column; } }
+    @include flex;
+    flex-direction: column;
+  }
+}
